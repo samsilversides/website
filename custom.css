@@ -2386,6 +2386,11 @@ textarea.w-select {
   display: flex;
 }
 
+.ss-footer-logo {
+  width: 60px;
+  height: 60px;
+}
+
 @media screen and (max-width: 991px) {
   .ss-hero-link-container {
     margin-left: -15px;
