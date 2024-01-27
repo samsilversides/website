@@ -2218,7 +2218,7 @@ textarea.w-select {
   font-family: Onest, sans-serif;
   font-size: 120px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .ss-hero-links {
@@ -2244,11 +2244,7 @@ textarea.w-select {
   margin-bottom: 0;
   font-family: Onest, sans-serif;
   font-weight: 400;
-}
-
-.ss-hero-container {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  line-height: 1.1;
 }
 
 .ss-hero-sub-container {
@@ -2267,8 +2263,8 @@ textarea.w-select {
 
 .ss-hero-section {
   border-bottom: 1px solid #000;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .ss-photo-section {
@@ -2359,14 +2355,6 @@ textarea.w-select {
   display: inline;
 }
 
-.ss-footer-h3 {
-  color: #7a7878;
-  font-family: Onest, sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1;
-}
-
 .ss-footer-section {
   flex-direction: column;
   align-items: center;
@@ -2378,7 +2366,7 @@ textarea.w-select {
 .ss-contact-circle {
   width: 60px;
   height: 60px;
-  background-color: #333;
+  background-color: #000;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -2386,9 +2374,93 @@ textarea.w-select {
   display: flex;
 }
 
-.ss-footer-logo {
+.ss-footer-image {
   width: 60px;
   height: 60px;
+}
+
+.ss-practice-section {
+  border-bottom: 1px solid #000;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.ss-practice-grid {
+  width: 100%;
+  max-width: 1000px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.body {
+  font-family: Onest, sans-serif;
+  font-weight: 400;
+}
+
+.ss-practice-h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.ss-class-container {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 25px;
+}
+
+.ss-class-container.last {
+  margin-bottom: 0;
+}
+
+.ss-classes-time {
+  color: #7a7878;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ss-classes-h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.ss-classes-link {
+  color: #333;
+  margin-bottom: 2px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ss-classes-link-container {
+  align-items: center;
+  display: flex;
+}
+
+.ss-arrow-black {
+  width: 32px;
+  height: 32px;
+}
+
+.ss-practice-h4 {
+  color: #7a7878;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 991px) {
@@ -2405,6 +2477,11 @@ textarea.w-select {
     align-items: flex-start;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .ss-practice-grid {
+    max-width: 600px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2434,6 +2511,11 @@ textarea.w-select {
   .ss-contact-h3 {
     font-size: 32px;
   }
+
+  .ss-practice-grid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2443,6 +2525,7 @@ textarea.w-select {
 
   .ss-hero-h2 {
     font-size: 20px;
+    line-height: 1.4;
   }
 
   .ss-photo {
@@ -2466,8 +2549,29 @@ textarea.w-select {
     width: 50px;
     height: 50px;
   }
+
+  .ss-practice-h2 {
+    font-size: 32px;
+  }
+
+  .ss-classes-h3 {
+    font-size: 22px;
+  }
 }
 
+#w-node-ce280e63-6bab-bf8c-04ec-18766a1a2574-f42c8fba {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_90f47fe6-a1f9-094f-9d91-d5dee51aceca-f42c8fba {
+  align-self: start;
+}
+
+#w-node-e11386c9-7725-4035-a709-2ca1fb47c9c8-f42c8fba,
+#w-node-_139428ad-0d32-eaaa-f673-e127579f94ed-f42c8fba,
+#w-node-_0a638a56-9782-b496-90c8-c09bc86a94e5-f42c8fba,
+#w-node-f40b9779-7cc7-0dda-0822-db40724e294f-f42c8fba,
+#w-node-_75bf5087-e9af-2662-7225-be943dc2ba14-f42c8fba,
 #w-node-_71aaaf69-7d30-5d55-2c96-00434b14ea0b-f42c8fba,
 #w-node-_71aaaf69-7d30-5d55-2c96-00434b14ea0f-f42c8fba {
   grid-area: span 1 / span 1 / span 1 / span 1;
